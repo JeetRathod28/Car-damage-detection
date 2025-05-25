@@ -6,17 +6,17 @@ A dual-model project using YOLOv8 and TensorFlow to detect car damage from image
 
 car-damage-detection/
 ├── models/
-│ ├── best.pt # Pretrained YOLOv8 model
-│ └── damage_classifier.h5 # Pretrained TensorFlow model (download required, see below)
+│   ├── yolo_best.pt            # Pretrained YOLOv8 model
+│   └── damage_classifier.h5    # Pretrained TensorFlow model (download required, see below)
 ├── samples/
-│ ├── images/ # Sample test images
-│ └── videos/ # Sample test videos
-├── run.ipynb # Jupyter Notebook with inference and demo pipeline
+│   ├── images/                 # Sample test images
+│   └── videos/                 # Sample test videos
+├── run.ipynb                   # Jupyter Notebook with inference and demo pipeline
 ├── train/
-│ ├── train_yolo.py # YOLOv8 training script
-│ └── train_tf.py # TensorFlow training script
-├── requirements.txt # Required Python packages
-├── README.md # This file
+│   ├── train_yolo.py           # YOLOv8 training script
+│   └── train_tf.py             # TensorFlow training script
+├── requirements.txt            # Required Python packages
+└── README.md                   # This file
 
 ## Models
 
@@ -57,7 +57,7 @@ Training code is provided separately in the `train/` directory:
 - Place it in the models/ directory.
   
 4. Run the inference/demo code:
-- Open `run.ipynb` in Jupyter Notebook.
+- Open `main.ipynb` in Jupyter Notebook.
 - Update the paths to your image, video, or dataset files.
 - Run all cells — everything is modular and works directly after setting paths.
 
