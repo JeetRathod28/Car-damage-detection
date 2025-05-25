@@ -11,7 +11,7 @@ car-damage-detection/
 ├── samples/
 │   ├── images/                 # Sample test images
 │   └── videos/                 # Sample test videos
-├── run.ipynb                   # Jupyter Notebook with inference and demo pipeline
+├── main.ipynb                   # Jupyter Notebook with inference and demo pipeline
 ├── train/
 │   ├── train_yolo.py           # YOLOv8 training script
 │   └── train_tf.py             # TensorFlow training script
