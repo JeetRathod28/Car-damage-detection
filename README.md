@@ -3,7 +3,7 @@
 A dual-model project using YOLOv8 and TensorFlow to detect car damage from images and videos.
 
 ## Project Structure
-
+```
 car-damage-detection/
 ├── models/
 │   ├── yolo_best.pt            # Pretrained YOLOv8 model
@@ -17,7 +17,7 @@ car-damage-detection/
 │   └── train_tf.py             # TensorFlow training script
 ├── requirements.txt            # Required Python packages
 └── README.md                   # This file
-
+```
 ## Models
 
 - **YOLOv8** (`best.pt`): Detects visible car damage.
