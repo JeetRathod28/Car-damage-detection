@@ -6,7 +6,7 @@ A dual-model project using YOLOv8 and TensorFlow to detect car damage from image
 ```
 car-damage-detection/
 ├── models/
-│   ├── yolo_best.pt            # Pretrained YOLOv8 model
+│   ├── best.pt            # Pretrained YOLOv8 model
 │   └── damage_classifier.h5    # Pretrained TensorFlow model (download required, see below)
 ├── samples/
 │   ├── images/                 # Sample test images
