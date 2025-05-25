@@ -4,25 +4,31 @@ A dual-model project using YOLOv8 and TensorFlow to detect car damage from image
 
 ## Project Structure
 
-
 car-damage-detection/
 ├── models/
-│   ├── yolo_best.pt            # Pretrained YOLOv8 model
-│   └── damage_classifier.h5    # Pretrained TensorFlow model
+│ ├── best.pt # Pretrained YOLOv8 model
+│ └── damage_classifier.h5 # Pretrained TensorFlow model (download required, see below)
 ├── samples/
-│   ├── images/                 # Sample test images
-│   └── videos/                 # Sample test videos
-├── run.ipynb                   # Jupyter Notebook with inference and demo pipeline
+│ ├── images/ # Sample test images
+│ └── videos/ # Sample test videos
+├── run.ipynb # Jupyter Notebook with inference and demo pipeline
 ├── train/
-│   ├── train_yolo.py           # YOLOv8 training script
-│   └── train_tf.py             # TensorFlow training script
-├── requirements.txt            # Required Python packages
-├── README.md                   # This file
+│ ├── train_yolo.py # YOLOv8 training script
+│ └── train_tf.py # TensorFlow training script
+├── requirements.txt # Required Python packages
+├── README.md # This file
 
 ## Models
 
-- **YOLOv8** (`yolo_best.pt`): Detects visible car damage.
+- **YOLOv8** (`best.pt`): Detects visible car damage.
 - **TensorFlow** (`damage_classifier.h5`): Classifies type/severity of damage from the detected regions.
+
+
+## Model Download
+Due to file size limitations on GitHub, the pretrained TensorFlow model (damage_classifier.h5) is hosted on Google Drive. Download it from the following link:
+https://drive.google.com/file/d/1iAamXRinh7vjbW7NGp_IcBIWLaig1LJX/view?usp=sharing 
+Download TensorFlow Model
+After downloading, place the damage_classifier.h5 file in the models/ directory of the project.
 
 ## Training Code Provided
 
@@ -45,7 +51,11 @@ Training code is provided separately in the `train/` directory:
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-   
+
+3. Download the TensorFlow model:
+- Follow the instructions in the Model Download section to download `damage_classifier.h5`.
+- Place it in the models/ directory.
+  
 4. Run the inference/demo code:
 - Open `run.ipynb` in Jupyter Notebook.
 - Update the paths to your image, video, or dataset files.
